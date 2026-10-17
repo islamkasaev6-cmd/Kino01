@@ -1,0 +1,14 @@
+
+{
+  "$schema": "https://railway.com",
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "providers": ["python"],
+      "pkgs": ["ffmpeg"]
+    }
+  },
+  "deploy": {
+    "startCommand": "python main.py"
+  }
+}
