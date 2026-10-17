@@ -2,7 +2,7 @@ import os
 import telebot
 from yt_dlp import YoutubeDL
 
-TOKEN = '8927633116:AAH_X03dx46N9_t-1ZJPaHhkbUvijUjZtyA '
+TOKEN = '8927633116:AAH_X03dx46N9_t-1ZJPaHhkbUvijUjZtyA'
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
@@ -45,4 +45,3 @@ def download_and_send_video(message):
 
 print("Бот успешно запущен и готов к работе!")
 bot.infinity_polling(timeout=10, long_polling_timeout=5)
-
